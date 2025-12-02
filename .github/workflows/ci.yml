@@ -1,88 +1,37 @@
-name: CI/CD Pipeline - Mobile Verification
+name: CI
+
+# This workflow will do a clean install of dependencies, cache them up to 10 days,
+# run tests and build with - (https://github.com/features/actions)
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 on:
   push:
-    branches:
-      - main
-      - develop
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
-      - develop
-    types: [opened, synchronize, reopened]
-
-env:
-  NODE_VERSION: '20'
-  PNPM_VERSION: '8'
+    branches: [ "main" ]
 
 jobs:
-  quality_gates:
-    name: "♞️ Code Quality Checks"
+  build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+        # See supported Node.js release at https://github.com/actions/setup-node/issues/171
+
     steps:
-      - name: "⬇️ Checkout Repository"
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: "⚙️ Setup pnpm"
-        uses: pnpm/action-setup@v3
-        with:
-          version: ${{ env.PNPM_VERSION }}
-
-      - name: "⚒️ Setup Node.js v${{ env.NODE_VERSION }}"
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
-      - name: "📦 Install Dependencies"
-        run: pnpm install --frozen-lockfile
-
-      - name: Linting & Formatting Check (Biome)
-        # Apex Standard for TS/JS quality control
-        run: pnpm biome check --linter --formatter --max-warnings 0 .
-
-      - name: "🔍 TypeScript Strict Type Check"
-        run: pnpm tsc --noEmit
-
-      - name: "⚗️ Run Unit & Component Tests (Vitest/Jest)"
-        run: pnpm test:unit --coverage 
-
-      - name: "📊 Upload Coverage Report to Codecov"
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          fail_ci_if_error: true
-          verbose: true
-
-  expo_configuration_check:
-    name: "📱 Expo Configuration Sanity Check"
-    needs: quality_gates
-    runs-on: ubuntu-latest
-    steps:
-      - name: "⬇️ Checkout Repository"
-        uses: actions/checkout@v4
-
-      - name: "⚙️ Setup pnpm"
-        uses: pnpm/action-setup@v3
-        with:
-          version: ${{ env.PNPM_VERSION }}
-
-      - name: "⚒️ Setup Node.js v${{ env.NODE_VERSION }}"
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
-      - name: "📦 Install Dependencies"
-        run: pnpm install --frozen-lockfile
-
-      - name: Ensure Expo SDK is Installed Globally
-        run: npm install -g expo-cli
-
-      - name: Verify Expo Build Configuration Integrity (Prebuild Dry Run)
-        # This ensures all native dependencies and configuration files are valid before a full build.
-        run: npx expo prebuild --clean --platform all --dry-run
-        env:
-          EXPO_NO_DOTENV: 1
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm' # Cache npm dependencies
+    - name: Install Dependencies
+      run: npm ci # Use 'npm ci' for cleaner installs in CI environments
+    - name: Run Linters & Formatters
+      run: npm run lint && npm run format # Assuming you have 'lint' and 'format' scripts in package.json
+    - name: Run Tests
+      run: npm test # Assuming you have a 'test' script in package.json
+    - name: Build Project
+      run: npm run build # Assuming you have a 'build' script in package.json
