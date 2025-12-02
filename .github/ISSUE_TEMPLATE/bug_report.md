@@ -1,75 +1,75 @@
-# Bug Report for QRSay Mobile Application
+# Bug Report
 
-Thank you for taking the time to report an issue. Following these guidelines ensures we can diagnose and resolve the problem efficiently, upholding the Zero-Defect standard.
+## 👋 Request for Information (RFI) - Bug Report Template
 
----
+Thank you for reporting a bug. To help us diagnose and resolve the issue efficiently, please provide as much detail as possible. This template ensures we gather all necessary information, adhering to the **Apex Technical Authority**'s standards for clarity and completeness.
 
-## 1. Summary
+--- 
 
-**A brief, descriptive title explaining the problem.**
+## 🔍 Bug Description
 
----
+**Concise Summary:** (e.g., "App crashes when scanning QR code with special characters")
 
-## 2. Environment Details (Crucial for Mobile Debugging)
+**Detailed Description:**
+Describe the bug in detail. What unexpected behavior are you observing?
 
-This section must capture the exact context where the failure occurred. Reference the **Apex Toolchain** principles for environment clarity.
+--- 
 
-| Attribute | Detail |
-| :--- | :--- |
-| **Application Version** | (e.g., 1.2.0 - Check in Settings) |
-| **Platform** | (e.g., iOS 17.4, Android 14) |
-| **Device Model** | (e.g., iPhone 15 Pro, Pixel 8) |
-| **Expo SDK Version** | (If known/applicable) |
-| **React Native Version** | (If known/applicable) |
+## 🚀 Steps to Reproduce
 
----
+Provide a clear, step-by-step guide to reproduce the bug. Be as specific as possible.
 
-## 3. Reproduction Steps
+1.  Go to the **[Screen/Section Name]**.
+2.  Perform **[Action A]**.
+3.  Perform **[Action B]**.
+4.  Observe **[Unexpected Behavior]**.
 
-**Please list the exact steps required to reproduce the bug, starting from a fresh application launch.**
+--- 
 
-1. Launch the application.
-2. Navigate to [Specific Screen/Feature].
-3. Perform Action A (e.g., Tap the Scanner Button).
-4. Perform Action B (e.g., Scan a malformed QR code).
-5. Observe Unexpected Behavior.
+## ℹ️ Expected vs. Actual Behavior
 
----
+**Expected Behavior:**
+What should have happened?
 
-## 4. Expected vs. Actual Behavior
+**Actual Behavior:**
+What actually happened instead?
 
-### Expected Behavior
+--- 
 
-*What *should* have happened according to the specification? (e.g., The app should gracefully handle the scan error and display a toast notification.)*
+## 📱 Environment Details
 
-### Actual Behavior
+*   **Project:** QRSay Mobile Frontend CrossPlatform Scanner
+*   **Repository URL:** `https://github.com/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner`
+*   **Operating System:** (e.g., iOS 17.2, Android 14)
+*   **Device:** (e.g., iPhone 15 Pro, Google Pixel 8)
+*   **App Version:** (If known)
+*   **React Native Version:** (If known)
+*   **Expo Version:** (If known)
 
-*What *actually* happened? (e.g., The application crashed immediately, or the UI froze.)*
+--- 
 
----
+## 📸 Screenshots / Videos (Optional but Recommended)
 
-## 5. Error Logs & Diagnostics
+If possible, attach screenshots or a short video demonstrating the bug. This can significantly speed up diagnosis.
 
-**Paste relevant logs below. If the application crashed, this is mandatory.**
+--- 
 
-Attach any relevant stack traces, console output (from Expo Dev Tools or development environment), or native crash logs.
+## 💡 Additional Information (Optional)
 
-text
-[Paste Console/Crash Logs Here]
+Any other context about the problem that might be helpful, such as relevant logs, network conditions, or specific QR code data that triggers the issue.
 
+--- 
 
----
+## 🧠 AI Agent Directives Reference
 
-## 6. Code Context (If applicable to development work)
+This bug report adheres to the following **Apex Agent Directives** for **QRSay-Mobile-Frontend-CrossPlatform-Scanner**:
 
-If the bug appears related to a specific component, navigation flow, or state management (Zustand/Redux), provide the relevant snippet. **Adhere to DRY principles when providing code samples.**
+*   **Project Type:** Cross-Platform Mobile Application
+*   **Primary Stack:** React Native, Expo, TypeScript (for advanced types/linting), JavaScript
+*   **Architecture:** Feature-Sliced Design (FSD) principles adapted for React Native.
+*   **Linting/Formatting:** Biome (or ESLint/Prettier if Biome integration is not yet complete for RN).
+*   **Testing:** Vitest for unit/integration tests, Playwright for E2E if applicable to a web-based or desktop build, or native simulators for mobile.
+*   **CI/CD:** GitHub Actions (defined in `.github/workflows/ci.yml`).
+*   **Package Management:** npm/yarn/pnpm (as defined in project setup).
 
-typescript
-// Example: Relevant TypeScript/React Native code snippet
-
-
-
-
----
-
-**Repository Link Reference:** [QRSay-QR-Code-Interaction-Mobile-App](https://github.com/chirag127/QRSay-QR-Code-Interaction-Mobile-App)
+*By submitting this report, you assist our agents in maintaining the highest standards of code quality and rapid issue resolution.*
