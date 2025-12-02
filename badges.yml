@@ -1,0 +1,58 @@
+# Badges Configuration
+# This file defines the badges to be displayed in the README.md
+# All URLs are dynamically generated based on the repository owner and name.
+
+# Base URL for Shields.io and repository links
+base_url: "https://img.shields.io/badge"
+repo_url: "https://github.com/chirag127/QRSay-QR-Code-Interaction-Mobile-App"
+
+# Dynamic Badge Generation
+# User: chirag127
+# Repo Name: QRSay-QR-Code-Interaction-Mobile-App
+# Style: flat-square
+
+# Required Badges:
+# - Build Status (GitHub Actions)
+# - Code Coverage (Codecov)
+# - Tech Stack (Language, Frameworks)
+# - Lint/Format (Biome/Ruff)
+# - License (CC BY-NC 4.0)
+# - GitHub Stars
+
+badges:
+  - name: "Build Status"
+    shield_url: "https://img.shields.io/github/actions/workflow/status/chirag127/QRSay-QR-Code-Interaction-Mobile-App/ci.yml?branch=main&style=flat-square"
+    markdown: "[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/QRSay-QR-Code-Interaction-Mobile-App/ci.yml?branch=main&style=flat-square)](https://github.com/chirag127/QRSay-QR-Code-Interaction-Mobile-App/actions)"
+
+  - name: "Code Coverage"
+    # Assuming Codecov is used and configured for the repo
+    shield_url: "https://codecov.io/gh/chirag127/QRSay-QR-Code-Interaction-Mobile-App/branch/main/graphs/badge.svg?style=flat-square"
+    markdown: "[![Code Coverage](https://codecov.io/gh/chirag127/QRSay-QR-Code-Interaction-Mobile-App/branch/main/graphs/badge.svg?style=flat-square)](https://codecov.io/gh/chirag127/QRSay-QR-Code-Interaction-Mobile-App)"
+
+  - name: "Tech Stack - TypeScript"
+    shield_url: "https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"
+    markdown: "[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)"
+
+  - name: "Tech Stack - React Native"
+    shield_url: "https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=61DAFB"
+    markdown: "[![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=61DAFB)](https://reactnative.dev/)"
+
+  - name: "Tech Stack - Expo"
+    shield_url: "https://img.shields.io/badge/Expo-272727?style=flat-square&logo=expo&logoColor=white"
+    markdown: "[![Expo](https://img.shields.io/badge/Expo-272727?style=flat-square&logo=expo&logoColor=white)](https://expo.dev/)"
+
+  - name: "License: CC BY-NC 4.0"
+    shield_url: "https://img.shields.io/badge/License-CC BY-NC 4.0-lightgrey?style=flat-square"
+    markdown: "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC BY-NC 4.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
+
+  - name: "GitHub Stars"
+    shield_url: "https://img.shields.io/github/stars/chirag127/QRSay-QR-Code-Interaction-Mobile-App?style=flat-square&logo=github"
+    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/QRSay-QR-Code-Interaction-Mobile-App?style=flat-square&logo=github)](https://github.com/chirag127/QRSay-QR-Code-Interaction-Mobile-App)"
+
+  - name: "Platform - iOS"
+    shield_url: "https://img.shields.io/badge/Platform-iOS-9cf?style=flat-square&logo=apple&logoColor=white"
+    markdown: "[![Platform - iOS](https://img.shields.io/badge/Platform-iOS-9cf?style=flat-square&logo=apple&logoColor=white)](https://www.apple.com/ios/)"
+
+  - name: "Platform - Android"
+    shield_url: "https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white"
+    markdown: "[![Platform - Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://www.android.com/)"
