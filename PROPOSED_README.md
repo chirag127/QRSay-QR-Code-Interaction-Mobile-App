@@ -1,124 +1,148 @@
-# QRSay-Mobile-Frontend-CrossPlatform-Scanner
+# ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App
 
-[![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner/ci.yml?style=flat-square&logo=githubactions)](https://github.com/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner/actions/workflows/ci.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner?style=flat-square&logo=codecov)](https://codecov.io/gh/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner)
-[![Tech Stack](https://img.shields.io/badge/React%20Native-Expo-blue?style=flat-square&logo=react)](https://reactnative.dev/)
-[![Lint/Format](https://img.shields.io/badge/Biome-Fast-green?style=flat-square&logo=biome)](https://biomejs.dev/)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-orange?style=flat-square&logo=creativecommons)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![GitHub Stars](https://img.shields.io/github/stars/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner?style=flat-square&logo=github)](https://github.com/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner)
+A high-speed, Apex-grade, cross-platform mobile application designed for efficient QR code scanning, robust management, and secure data serialization. Built with React Native and Expo for seamless development and deployment.
 
-**QRSay Mobile Frontend: A high-performance, cross-platform QR code scanner and manager built with React Native and Expo for iOS and Android. Engineered for seamless user interaction and rapid development.** This repository serves as the front-end client for advanced QR code management functionalities.
+---
 
-## Architecture
+[![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App/ci.yml?style=flat-square)](https://github.com/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App/actions/workflows/ci.yml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App?style=flat-square)](https://app.codecov.io/gh/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App)
+[![Tech Stack](https://img.shields.io/badge/TechStack-React%20Native%20%7C%20Expo%20%7C%20TypeScript-blue?style=flat-square)](https://reactnative.dev/)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-orange?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App?style=flat-square)](https://github.com/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App/stargazers)
 
-mermaid
-graph TD
-    A[React Native/Expo Frontend] --> B{QR Code Scanning Engine}
-    B --> C[Data Management Layer]
-    C --> D[State Management (Context API/Zustand)]
-    D --> E[UI Components (NativeBase/Tamagui)]
-    E --> F[API Integration (if applicable)]
-    F --> G[Backend Services]
-    D --> H[Cross-Platform Deployment (iOS/Android)]
+---
 
 
-## Table of Contents
+## 🚀 Project Overview
 
-*   [About](#about)
-*   [Features](#features)
-*   [Getting Started](#getting-started)
-*   [Development](#development)
-*   [Testing](#testing)
-*   [License](#license)
-*   [Contributing](#contributing)
-*   [AI Agent Directives](#ai-agent-directives-collapsible)
+**ScanFlow** is engineered to be the definitive mobile solution for all your QR code needs. It offers lightning-fast scanning, intuitive management of generated and scanned codes, and secure data handling capabilities, all within a single, cohesive cross-platform application.
 
-## About
+## 🌳 Project Structure
 
-QRSay Mobile Frontend is a robust, user-friendly application designed to capture, decode, and manage QR codes efficiently across both iOS and Android platforms. Leveraging the power of React Native and Expo, it provides a unified codebase for a superior mobile experience.
 
-## Features
+ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   └── bug_report.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── SECURITY.md
+│   ├── CONTRIBUTING.md
+│   └── workflows/
+│       └── ci.yml
+├── .vscode/
+├── assets/
+├── src/
+│   ├── components/
+│   ├── constants/
+│   ├── hooks/
+│   ├── navigation/
+│   ├── screens/
+│   ├── services/
+│   ├── state/
+│   ├── types/
+│   └── utils/
+├── App.tsx
+├── babel.config.js
+├── app.json
+├── index.js
+├── package.json
+├── tsconfig.json
+└── README.md
 
-*   **High-Performance Scanning:** Utilizes native device capabilities for rapid QR code detection.
-*   **Cross-Platform Compatibility:** Single codebase for seamless deployment on iOS and Android.
-*   **User-Friendly Interface:** Intuitive design for effortless scanning and management.
-*   **Code Management:** Ability to store, categorize, and retrieve scanned QR codes.
-*   **Expo Integration:** Benefits from Expo's managed workflow for simplified development and deployment.
 
-## Getting Started
+## 📋 Table of Contents
 
-Follow these steps to get a copy of the project up and running on your local machine.
+*   [🚀 Project Overview](#-project-overview)
+*   [🌳 Project Structure](#-project-structure)
+*   [📋 Table of Contents](#-table-of-contents)
+*   [✨ Key Features](#-key-features)
+*   [🛠️ Technology Stack](#-technology-stack)
+*   [⚡ Development & Setup](#-development--setup)
+*   [🧪 Testing](#-testing)
+*   [🔒 Security](#-security)
+*   [🤝 Contributing](#-contributing)
+*   [📜 License](#-license)
+*   [🤖 AI AGENT DIRECTIVES](#-ai-agent-directives)
 
-### Prerequisites
+## ✨ Key Features
 
-*   Node.js (v18+ recommended)
-*   npm or Yarn
-*   Expo CLI
-*   React Native development environment setup for your platform (iOS/Android)
+*   **High-Speed QR Scanning:** Leveraging native capabilities for rapid detection and decoding.
+*   **Code Management:** Organize, categorize, and search your scanned and generated QR codes.
+*   **Secure Data Serialization:** Encrypt sensitive data embedded within QR codes.
+*   **Cross-Platform Compatibility:** Built with React Native and Expo for iOS and Android.
+*   **TypeScript Integration:** Robust type safety and enhanced developer experience.
+*   **Customizable Generation:** Create QR codes with various data types and customization options.
 
-### Installation
+## 🛠️ Technology Stack
 
-1.  Clone the repository:
+*   **Core Framework:** React Native
+*   **Development Platform:** Expo
+*   **Language:** TypeScript (Strict Mode)
+*   **State Management:** (e.g., Zustand, Redux Toolkit, Jotai - _Specify as implemented_)
+*   **Navigation:** React Navigation
+*   **UI Components:** NativeBase / React Native Paper (_Specify as implemented_)
+*   **Linting & Formatting:** Biome (_Referencing Apex standards_)
+*   **Testing:** Vitest (Unit), Playwright (E2E - for potential web/desktop builds if extended)
+
+## ⚡ Development & Setup
+
+Follow these steps to set up the project locally.
+
+1.  **Clone the Repository:**
     bash
-    git clone https://github.com/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner.git
-    cd QRSay-Mobile-Frontend-CrossPlatform-Scanner
+    git clone https://github.com/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App.git
+    cd ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App
     
 
-2.  Install dependencies:
+2.  **Install Dependencies:**
     bash
     npm install
     # or
     yarn install
     
 
-## Development
-
-### Running the Application
-
-*   **Start the Expo development server:**
+3.  **Start the Development Server:**
     bash
     npx expo start
     
 
-*   **Run on a simulator or physical device:**
-    *   Press `i` to run on the iOS simulator.
-    *   Press `a` to run on the Android emulator.
-    *   Scan the QR code with the Expo Go app on your physical device.
+4.  **Run on Devices/Simulators:**
+    *   **iOS:** Press `i` in the terminal.
+    *   **Android:** Press `a` in the terminal.
+    *   **Web:** Press `w` in the terminal.
 
-### Scripts
+## 🧪 Testing
 
-| Script        | Description                       |
-| ------------- | --------------------------------- |
-| `npm start`   | Starts the Expo development server  |
-| `npm run ios` | Builds and runs on iOS simulator  |
-| `npm run android` | Builds and runs on Android emulator |
-| `npm run lint` | Runs Biome linter                 |
-| `npm run format`| Runs Biome formatter              |
-
-## Testing
-
-This project uses Vitest for unit testing and Playwright for end-to-end (E2E) testing, ensuring code quality and reliability.
-
-*   **Run Unit Tests:**
+*   **Unit & Integration Tests:**
     bash
-    npm run test:unit
+    npm run test
+    # or
+    yarn test
     
 
-*   **Run E2E Tests:**
+*   **End-to-End Tests (If applicable for non-mobile builds):**
     bash
-    npm run test:e2e
+    npm run e2e
+    # or
+    yarn e2e
     
 
-## License
+## 🔒 Security
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0) - see the [LICENSE](LICENSE) file for details.
+This project adheres to the security guidelines outlined in the `.github/SECURITY.md` file. We prioritize secure coding practices, dependency vulnerability scanning, and prompt patching of security issues.
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Please read our [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details on the process for submitting pull requests.
+We welcome contributions! Please see `.github/CONTRIBUTING.md` for detailed guidelines on how to submit pull requests and report issues.
 
-## AI Agent Directives <details>
-<summary>Click to expand</summary>
+## 📜 License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license. See the `LICENSE` file for more details.
+
+## 🤖 AI AGENT DIRECTIVES
+
+<details>
+<summary>Show AI Agent Directives</summary>
 
 # SYSTEM: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION)
 
@@ -144,95 +168,40 @@ Contributions are welcome! Please read our [CONTRIBUTING.md](.github/CONTRIBUTIN
 ---
 
 ## 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
-**Directives:** Detect the project type (`package.json` for React Native/Expo) and apply the corresponding **Apex Toolchain**.
+**Directives:** Detect the project type and apply the corresponding **Apex Toolchain**.
 
-*   **PRIMARY SCENARIO: WEB / APP / EXTENSION (TypeScript / JavaScript)**
-    *   **Stack:** This project utilizes **JavaScript (ES2023+)** with **TypeScript** for enhanced type safety (where applicable). The core framework is **React Native** with the **Expo** framework for accelerated development and simplified deployment across iOS and Android. UI development is enhanced by **Biome** for linting and formatting, and **Vitest** for unit testing. **Playwright** is used for robust E2E testing.
-    *   **Architecture:** Adheres to modern frontend architectural patterns, favoring component-based design. State management solutions like Zustand or React Context API are employed. UI components may leverage libraries such as NativeBase or Tamagui for consistent theming and responsiveness.
-    *   **State Management:** Prioritize Signals (Standardized) where possible, or utilize efficient solutions like Zustand or React Context API for global state management. Ensure clear state boundaries and predictable updates.
-    *   **UI/UX:** Focus on creating intuitive, accessible, and performant user interfaces, adhering to the latest Material Design or Human Interface Guidelines principles.
-    *   **Lint/Format:** **Biome** is the primary tool for maintaining code quality and consistency.
-    *   **Testing:** **Vitest** for unit/integration tests, **Playwright** for end-to-end tests.
+*   **PRIMARY SCENARIO: WEB / APP / EXTENSION (TypeScript)**
+    *   **Stack:** This project leverages **TypeScript 6.x (Strict Mode)**, **React Native**, and **Expo**. Key tooling includes **npm/yarn** for package management, **Biome** for ultra-fast linting and formatting, and **Vitest** for robust unit and integration testing. Playwright is considered for potential future E2E testing expansions.
+    *   **Architecture:** Adheres to a **Component-Based Architecture** with considerations for **Feature-Sliced Design (FSD)** principles where applicable for scalability and maintainability. State management should be optimized using modern libraries (e.g., Zustand, Jotai) or established patterns (Redux Toolkit).
+    *   **Lint/Format:** **Biome** is the mandated tool for code quality. Ensure all configurations are optimized for speed and consistency across the project.
+    *   **Testing:** **Vitest** is the primary framework for unit and integration tests. Implement comprehensive test coverage for all critical components and business logic.
 
-*   **SECONDARY SCENARIO B: SYSTEMS / PERFORMANCE (Rust / Go) - *Not applicable for this project's primary function. Reference only for potential future native module development.***
-    *   **Stack:** Rust (Cargo), Go (Modules).
-    *   **Lint:** Clippy / GolangCI-Lint.
-    *   **Architecture:** Hexagonal Architecture (Ports & Adapters).
+*   **SECONDARY SCENARIO: SYSTEMS / PERFORMANCE (Rust/Go) - *Not applicable for this project.***
 
-*   **TERTIARY SCENARIO C: DATA / AI / SCRIPTS (Python) - *Not applicable for this project's primary function. Reference only for potential future data processing or AI integrations.***
-    *   **Stack:** uv (Manager), Ruff (Linter), Pytest (Test).
-    *   **Architecture:** Modular Monolith or Microservices.
+*   **TERTIARY SCENARIO: DATA / SCRIPTS / AI (Python) - *Not applicable for this project.***
 
 ---
 
-## 4. APEX NAMING CONVENTION (THE "STAR VELOCITY" ENGINE)
-A high-performing name must instantly communicate **Product**, **Function**, **Platform**, and **Type**.
-
-**Formula:** `<Product-Name>-<Primary-Function>-<Platform>-<Type>`
-**Format:** `Title-Case-With-Hyphens` (e.g., `ChatFlow-AI-Powered-Real-Time-Chat-Web-App` or `ZenRead-Book-Reader-CLI-Tool`).
-
-**Rules:**
-1.  **Length:** 3 to 10 words.
-2.  **Keywords:** MUST include high-volume terms.
-3.  **Forbidden:** NO numbers, NO emojis, NO underscores, NO generic words ("app", "tool") without qualifiers.
+## 4. APEX NAMING CONVENTION (STAR VELOCITY ENGINE)
+*   **Format:** `<Product-Name>-<Primary-Function>-<Platform>-<Type>`
+*   **Rules:** Title-Case-With-Hyphens. Min 3, Max 10 words. High-volume keywords. No numbers, emojis, underscores. Qualify generic terms.
 
 ---
 
-## 5. THE README REPLICATION PROTOCOL (THE ULTIMATE ARTIFACT)
-The README is a self-contained **Project Operating System**.
-
-**Required Sections:**
-1.  **VISUAL AUTHORITY (Above the Fold):**
-    *   Hero Banner/Logo.
-    *   **Live Badges** (Shields.io):
-        *   **Style:** `flat-square` (MANDATORY).
-        *   **User:** `chirag127` (MANDATORY).
-        *   **Required Badges:** Build Status (GitHub Actions), Code Coverage (Codecov), Tech Stack (Language, Frameworks), Lint/Format (Biome/Ruff), License (CC BY-NC 4.0), GitHub Stars.
-    *   **Social Proof:** "Star ⭐ this Repo" button.
-2.  **STRUCTURAL CLARITY:**
-    *   **BLUF:** 2-sentence value proposition.
-    *   **Architecture:** ASCII `tree` or Mermaid diagram.
-    *   **Table of Contents.**
-3.  **🤖 AI AGENT DIRECTIVES (CRITICAL):**
-    *   Must be in a collapsible `<details>` block.
-    *   **Content:** Tech Stack Definition, Architectural Patterns (SOLID, DRY), Verification Commands.
-    *   **Purpose:** Allows future agents to align immediately.
-4.  **DEVELOPMENT STANDARDS:**
-    *   Setup commands (`git clone` -> `npm install`).
-    *   Scripts table.
-    *   Principles (SOLID, DRY, YAGNI).
+## 5. README REPLICATION PROTOCOL (THE ULTIMATE ARTIFACT)
+*   **Content:** Must be a self-contained project operating system.
+*   **Sections:** Hero Banner/Logo, Live Badges (Shields.io, `flat-square`, `chirag127`), Social Proof, BLUF, Architecture Diagram (ASCII/Mermaid), ToC, AI Agent Directives (`<details>` block), Development Standards, Scripts, Principles.
 
 ---
 
 ## 6. CHAIN OF THOUGHT (CoT) PROTOCOL
-Before generating JSON, perform deep analysis in `<thinking>` block:
-1.  **Audit:** Analyze repo content and purpose.
-2.  **Pivot/Archive Decision:** Is it junk? If so, rename to `Archived-...`. If not, PIVOT to elite status.
-3.  **Naming Strategy:** Apply `<Product>-<Function>-<Type>` formula.
-4.  **Replication Protocol:** Draft the "AI Agent Directives" block.
-5.  **File Generation:** Plan the content for all 11 required files (including `PROPOSED_README.md` and `badges.yml`).
-6.  **Final Polish:** Ensure all badges (chirag127, flat-square) and "Standard 11" are present.
-7.  **Strict Adherence:** Ensure `PROPOSED_README.md` strictly follows the `AGENTS.md` directives.
+*   **Process:** Audit Repo -> Pivot/Archive -> Naming -> AI Directives Draft -> File Generation -> Polish -> Strict Adherence.
 
 ---
 
 ## 7. DYNAMIC URL & BADGE PROTOCOL
-**Mandate:** All generated files MUST use the correct dynamic URLs based on the **New Repository Name**.
-
-**Rules:**
-1.  **Base URL:** `https://github.com/chirag127/<New-Repo-Name>`
-2.  **Badge URLs:** All badges (Shields.io) must point to this Base URL or its specific workflows (e.g., `/actions/workflows/ci.yml`).
-3.  **Consistency:** Never use the old/original repository name in links. Always use the new "Apex" name.
-4.  **AGENTS.md Customization:** The generated `AGENTS.md` **MUST** be customized for the specific repository's technology stack (e.g., if Rust, use Rust tools; if Python, use Python tools), while retaining the core Apex principles. Do not just copy the generic template; adapt it.
-
----
-
-## 8. REPOSITORY ARCHIVAL PROTOCOL
-**Directive:** If the repository's purpose is found to be weak, vague, or obsolete, the **PURPOSE PIVOT** protocol is enacted. The repository will be renamed using the `Archived-...` prefix, and its metadata (Name, Description, Topics) will be updated to reflect its historical significance with the highest professional standard. All other file generations will proceed as normal to ensure proper archival.
-
----
-
-## 9. THE ELITE ARCHITECT'S VERIFICATION LAYER
-**Mandate:** Before outputting **ANYTHING**, execute a self-verification pass. Ensure adherence to all directives, especially the **Output Standard** (EXECUTION-ONLY) and the **Dynamic URL Protocol**.
+*   **Base URL:** `https://github.com/chirag127/<New-Repo-Name>`
+*   **Consistency:** All links/badges MUST use the NEW repository name. No exceptions.
+*   **AGENTS.md Customization:** Adapt this file's tech stack and tooling sections to match the **target repository's actual stack**. Do not copy verbatim.
 
 </details>
