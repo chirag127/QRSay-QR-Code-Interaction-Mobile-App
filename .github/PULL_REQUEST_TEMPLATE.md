@@ -1,43 +1,41 @@
 # Pull Request Template
 
-## 1. Purpose
+**Author:** @chirag127
+**Date:** December 2025
 
-Briefly describe the purpose of this pull request. What problem does it solve or what feature does it add?
+## 1. PR Overview
 
-## 2. Changes Made
+*   **Type of Change:** (e.g., Feature, Bugfix, Refactor, Documentation, Chore, Style, Test)
+*   **Description:** Briefly describe the changes made in this pull request.
+*   **Related Issue(s):** (Link to any relevant GitHub Issues, e.g., `Closes #123`)
 
-*   **High-Level Overview:** Summarize the main code changes.
-*   **Specifics:** Detail key modifications, new files, or removed files.
+## 2. Motivation
 
-## 3. Architectural Alignment
+Explain the problem this PR is solving or the feature it is adding. What is the context?
 
-*   Does this change adhere to the **Apex Tech Stack** (React Native, Expo)?
-*   Are architectural principles like **SOLID**, **DRY**, and **YAGNI** followed?
-*   How does this PR impact the **Feature-Sliced Design (FSD)** or relevant architectural pattern?
+## 3. Proposed Solution
 
-## 4. Testing & Verification
+Describe the technical approach taken. How does this PR address the motivation?
 
-*   **Unit Tests:** Were new unit tests added or existing ones updated?
-*   **Integration Tests:** Were integration tests modified or added?
-*   **E2E Tests:** Were any End-to-End tests affected or created?
-*   **Manual Testing:** Describe any manual testing performed, including steps and expected outcomes.
-*   **Verification Commands:** (If applicable) Provide commands to run tests and verify changes.
+## 4. Key Changes
 
-## 5. Code Quality & Linting
+*   List the most significant code changes or architectural adjustments.
+*   Focus on high-level impacts rather than line-by-line specifics.
 
-*   Has the code been linted using **Biome/Ruff** (or relevant JS/TS linter)?
-*   Has the code been formatted?
-*   Are there any new linting or formatting issues?
+## 5. Testing & Verification
 
-## 6. Related Issues/Tickets
+*   **Test Strategy:** Detail the testing approach (e.g., Unit tests, Integration tests, E2E tests, Manual verification).
+*   **Verification Steps:** Provide clear, concise steps for reviewers to verify the changes.
+*   **New Test Cases:** List any new test cases added or updated.
 
-*   Link to any GitHub issues, Jira tickets, or other relevant tracking items.
-    *   Example: Closes #123
-    *   Example: Fixes #456
+## 6. Architectural Alignment
 
-## 7. Screenshots/Recordings
+*   **Adherence to Apex Standards:** Confirm how this PR aligns with the project's architectural principles (e.g., Feature-Sliced Design, SOLID, DRY) and the **December 2025 Apex Tech Stack** ([refer to AGENTS.md](https://github.com/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App/blob/main/AGENTS.md)).
+*   **Impact Assessment:** Briefly discuss any potential architectural implications.
 
-*   (For UI changes) Provide relevant screenshots or short video recordings demonstrating the changes.
+## 7. Screenshots/Demos (If applicable)
+
+*   For UI changes, include screenshots or GIFs demonstrating the new functionality or bug fix.
 
 ## 8. Checklist
 
@@ -45,13 +43,11 @@ Briefly describe the purpose of this pull request. What problem does it solve or
 *   [ ] I have performed a self-review of my own code.
 *   [ ] I have commented my code, particularly in hard-to-understand areas.
 *   [ ] I have made corresponding changes to the documentation.
-*   [ ] My changes generate no new warnings or errors.
+*   [ ] My changes generate no new warnings.
 *   [ ] I have added tests that prove my fix is effective or that my feature works.
 *   [ ] New and existing unit tests pass locally with my changes.
-*   [ ] Any dependent changes have been merged and published in downstream modules.
-*   [ ] I have checked that all **Dynamic URLs** and **Badge Links** correctly point to `https://github.com/chirag127/QRSay-Mobile-Frontend-CrossPlatform-Scanner`.
-*   [ ] All AI Agent Directives in the relevant `AGENTS.md` file are satisfied by this PR.
+*   [ ] Any dependent changes have been merged and published.
+*   [ ] I have updated the `README.md` and `AGENTS.md` if necessary.
+*   [ ] All links and badge URLs point to the correct repository: `https://github.com/chirag127/ScanFlow-CrossPlatform-QRCode-Manager-Mobile-App`.
 
-## 9. Additional Notes
-
-*   Any other context or information that might be helpful for the reviewer.
+---
